@@ -1,0 +1,6 @@
+framework module Pods_Mesa_Thinking_Mesa_ThinkingUITests {
+  umbrella header "Pods-Mesa Thinking-Mesa ThinkingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

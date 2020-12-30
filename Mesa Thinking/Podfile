@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '13.0'
+
+target 'Mesa Thinking' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Mesa Thinking
+
+  target 'Mesa ThinkingTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Mesa ThinkingUITests' do
+    # Pods for testing
+  end
+
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'MaterialComponents/TextControls+FilledTextAreas'
+  pod 'MaterialComponents/TextControls+FilledTextFields'
+  pod 'MaterialComponents/TextControls+OutlinedTextAreas'
+  pod 'MaterialComponents/TextControls+OutlinedTextFields'
+  pod 'MaterialComponents/TextControls+OutlinedTextAreasTheming'
+  pod 'MaterialComponents/TextControls+OutlinedTextFieldsTheming'
+  pod 'FBSDKLoginKit'
+  pod 'CodableFirebase'
+  pod 'FirebaseAuth'
+  pod 'FirebaseDatabase'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseCrashlytics'
+  pod 'FirebaseAnalytics'
+  pod 'Firebase'
+
+
+
+end

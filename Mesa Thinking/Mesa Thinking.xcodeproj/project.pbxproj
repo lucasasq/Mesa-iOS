@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D75C76719C67D918EA79FE1 /* Pods_Mesa_Thinking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F52AB2FAE72485A98DED468 /* Pods_Mesa_Thinking.framework */; };
+		8E069331BBD0CAABE7BF9EED /* Pods_Mesa_Thinking_Mesa_ThinkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C2AE118D20134C3BF6FD2E /* Pods_Mesa_Thinking_Mesa_ThinkingUITests.framework */; };
+		DE1376B7259BF2C700E5D503 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1376B6259BF2C700E5D503 /* FilterVC.swift */; };
+		DE19EF3C2597C381002AF8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EF3B2597C381002AF8B6 /* AppDelegate.swift */; };
+		DE19EF3E2597C381002AF8B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EF3D2597C381002AF8B6 /* SceneDelegate.swift */; };
+		DE19EF402597C381002AF8B6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EF3F2597C381002AF8B6 /* LoginVC.swift */; };
+		DE19EF432597C381002AF8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE19EF412597C381002AF8B6 /* Main.storyboard */; };
+		DE19EF452597C384002AF8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE19EF442597C384002AF8B6 /* Assets.xcassets */; };
+		DE19EF482597C384002AF8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE19EF462597C384002AF8B6 /* LaunchScreen.storyboard */; };
+		DE19EF532597C385002AF8B6 /* Mesa_ThinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EF522597C385002AF8B6 /* Mesa_ThinkingTests.swift */; };
+		DE19EF5E2597C385002AF8B6 /* Mesa_ThinkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EF5D2597C385002AF8B6 /* Mesa_ThinkingUITests.swift */; };
+		DE19EF792597CC3E002AF8B6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EF782597CC3E002AF8B6 /* SignUpVC.swift */; };
+		DE7097902597D5CD003136B6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70978F2597D5CD003136B6 /* HomeVC.swift */; };
+		DE7097A72597D6C9003136B6 /* NewsDestaquesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE70979A2597D6C9003136B6 /* NewsDestaquesCollectionViewCell.xib */; };
+		DE7097A82597D6C9003136B6 /* NewsDestaquesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70979B2597D6C9003136B6 /* NewsDestaquesCollectionViewCell.swift */; };
+		DE7097A92597D6C9003136B6 /* NewsBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70979D2597D6C9003136B6 /* NewsBasicTableViewCell.swift */; };
+		DE7097AA2597D6C9003136B6 /* NewsBasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE70979E2597D6C9003136B6 /* NewsBasicTableViewCell.xib */; };
+		DE7097AB2597D6C9003136B6 /* AnimateloadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097A02597D6C9003136B6 /* AnimateloadingView.swift */; };
+		DE7097AC2597D6C9003136B6 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7097A12597D6C9003136B6 /* LoadingView.xib */; };
+		DE7097AD2597D6C9003136B6 /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097A22597D6C9003136B6 /* LoadingViewable.swift */; };
+		DE7097AE2597D6C9003136B6 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097A32597D6C9003136B6 /* loadingView.swift */; };
+		DE7097AF2597D6C9003136B6 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7097A52597D6C9003136B6 /* MessageView.xib */; };
+		DE7097B02597D6C9003136B6 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097A62597D6C9003136B6 /* MessageView.swift */; };
+		DE7097B92597D758003136B6 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097B72597D758003136B6 /* News.swift */; };
+		DE7097C22597D792003136B6 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097BF2597D792003136B6 /* Extensiones.swift */; };
+		DE7097C32597D792003136B6 /* ReactiveExtensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097C02597D792003136B6 /* ReactiveExtensiones.swift */; };
+		DE7097C42597D792003136B6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097C12597D792003136B6 /* Network.swift */; };
+		DE7097CD2597D85D003136B6 /* NewsDestaquesCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097CB2597D85D003136B6 /* NewsDestaquesCollectionViewVC.swift */; };
+		DE7097CE2597D85D003136B6 /* NewsBasicTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097CC2597D85D003136B6 /* NewsBasicTableViewVC.swift */; };
+		DE7097D32597D887003136B6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7097D22597D886003136B6 /* HomeViewModel.swift */; };
+		DEB2AC59259BA56A00C68781 /* DetailNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2AC58259BA56A00C68781 /* DetailNewsVC.swift */; };
+		DEB2AC77259BC0B400C68781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEB2AC76259BC0B400C68781 /* GoogleService-Info.plist */; };
+		DEB2AD40259BCA9600C68781 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2AD3F259BCA9600C68781 /* NewsViewModel.swift */; };
+		DEC2A192259A7AD6006B86A5 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2A191259A7AD6006B86A5 /* Token.swift */; };
+		DED56D872599953300C5E9E3 /* NewsOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED56D862599953300C5E9E3 /* NewsOptional.swift */; };
+		DED56DA125999E0B00C5E9E3 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED56DA025999E0B00C5E9E3 /* Pagination.swift */; };
+		DED56DA62599B87900C5E9E3 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED56DA52599B87900C5E9E3 /* AuthViewModel.swift */; };
+		DED56DAE259A321600C5E9E3 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED56DAD259A321600C5E9E3 /* StartVC.swift */; };
+		F67E3294E4726D68BC9C2DF3 /* Pods_Mesa_ThinkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9380B0BAFA00B5D6B037461 /* Pods_Mesa_ThinkingTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE19EF4F2597C385002AF8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE19EF302597C381002AF8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE19EF372597C381002AF8B6;
+			remoteInfo = "Mesa Thinking";
+		};
+		DE19EF5A2597C385002AF8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE19EF302597C381002AF8B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE19EF372597C381002AF8B6;
+			remoteInfo = "Mesa Thinking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F52AB2FAE72485A98DED468 /* Pods_Mesa_Thinking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mesa_Thinking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C57498CB938B2D68E74EE85 /* Pods-Mesa Thinking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesa Thinking.release.xcconfig"; path = "Target Support Files/Pods-Mesa Thinking/Pods-Mesa Thinking.release.xcconfig"; sourceTree = "<group>"; };
+		63DC920B0D9F1C6E79F70864 /* Pods-Mesa Thinking-Mesa ThinkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesa Thinking-Mesa ThinkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mesa Thinking-Mesa ThinkingUITests/Pods-Mesa Thinking-Mesa ThinkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C451B6A641F4496CDDE2B52 /* Pods-Mesa ThinkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesa ThinkingTests.debug.xcconfig"; path = "Target Support Files/Pods-Mesa ThinkingTests/Pods-Mesa ThinkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA96E3901AEC0FAE16529DB1 /* Pods-Mesa ThinkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesa ThinkingTests.release.xcconfig"; path = "Target Support Files/Pods-Mesa ThinkingTests/Pods-Mesa ThinkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		D77530E7A808A15C7825A1DC /* Pods-Mesa Thinking-Mesa ThinkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesa Thinking-Mesa ThinkingUITests.release.xcconfig"; path = "Target Support Files/Pods-Mesa Thinking-Mesa ThinkingUITests/Pods-Mesa Thinking-Mesa ThinkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE1376B6259BF2C700E5D503 /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		DE19EF382597C381002AF8B6 /* Mesa Thinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mesa Thinking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE19EF3B2597C381002AF8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE19EF3D2597C381002AF8B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE19EF3F2597C381002AF8B6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DE19EF422597C381002AF8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE19EF442597C384002AF8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE19EF472597C384002AF8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE19EF492597C384002AF8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE19EF4E2597C385002AF8B6 /* Mesa ThinkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mesa ThinkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE19EF522597C385002AF8B6 /* Mesa_ThinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesa_ThinkingTests.swift; sourceTree = "<group>"; };
+		DE19EF542597C385002AF8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE19EF592597C385002AF8B6 /* Mesa ThinkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mesa ThinkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE19EF5D2597C385002AF8B6 /* Mesa_ThinkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesa_ThinkingUITests.swift; sourceTree = "<group>"; };
+		DE19EF5F2597C385002AF8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE19EF782597CC3E002AF8B6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		DE70978F2597D5CD003136B6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DE70979A2597D6C9003136B6 /* NewsDestaquesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsDestaquesCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE70979B2597D6C9003136B6 /* NewsDestaquesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDestaquesCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE70979D2597D6C9003136B6 /* NewsBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsBasicTableViewCell.swift; sourceTree = "<group>"; };
+		DE70979E2597D6C9003136B6 /* NewsBasicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsBasicTableViewCell.xib; sourceTree = "<group>"; };
+		DE7097A02597D6C9003136B6 /* AnimateloadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateloadingView.swift; sourceTree = "<group>"; };
+		DE7097A12597D6C9003136B6 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		DE7097A22597D6C9003136B6 /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
+		DE7097A32597D6C9003136B6 /* loadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
+		DE7097A52597D6C9003136B6 /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		DE7097A62597D6C9003136B6 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		DE7097B72597D758003136B6 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		DE7097BF2597D792003136B6 /* Extensiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		DE7097C02597D792003136B6 /* ReactiveExtensiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveExtensiones.swift; sourceTree = "<group>"; };
+		DE7097C12597D792003136B6 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DE7097CB2597D85D003136B6 /* NewsDestaquesCollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDestaquesCollectionViewVC.swift; sourceTree = "<group>"; };
+		DE7097CC2597D85D003136B6 /* NewsBasicTableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsBasicTableViewVC.swift; sourceTree = "<group>"; };
+		DE7097D22597D886003136B6 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DEB2AC58259BA56A00C68781 /* DetailNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsVC.swift; sourceTree = "<group>"; };
+		DEB2AC76259BC0B400C68781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEB2AD3F259BCA9600C68781 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		DEC2A191259A7AD6006B86A5 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		DED56D862599953300C5E9E3 /* NewsOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsOptional.swift; sourceTree = "<group>"; };
+		DED56DA025999E0B00C5E9E3 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		DED56DA52599B87900C5E9E3 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		DED56DAD259A321600C5E9E3 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		E9380B0BAFA00B5D6B037461 /* Pods_Mesa_ThinkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mesa_ThinkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA2CDB5F43CF6CF5C0BD600 /* Pods-Mesa Thinking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesa Thinking.debug.xcconfig"; path = "Target Support Files/Pods-Mesa Thinking/Pods-Mesa Thinking.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C2AE118D20134C3BF6FD2E /* Pods_Mesa_Thinking_Mesa_ThinkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mesa_Thinking_Mesa_ThinkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE19EF352597C381002AF8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D75C76719C67D918EA79FE1 /* Pods_Mesa_Thinking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19EF4B2597C385002AF8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67E3294E4726D68BC9C2DF3 /* Pods_Mesa_ThinkingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19EF562597C385002AF8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E069331BBD0CAABE7BF9EED /* Pods_Mesa_Thinking_Mesa_ThinkingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B13A6429AD03C490B2A4CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F52AB2FAE72485A98DED468 /* Pods_Mesa_Thinking.framework */,
+				F1C2AE118D20134C3BF6FD2E /* Pods_Mesa_Thinking_Mesa_ThinkingUITests.framework */,
+				E9380B0BAFA00B5D6B037461 /* Pods_Mesa_ThinkingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FCE6AFF969016CFDE52261C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2CDB5F43CF6CF5C0BD600 /* Pods-Mesa Thinking.debug.xcconfig */,
+				4C57498CB938B2D68E74EE85 /* Pods-Mesa Thinking.release.xcconfig */,
+				63DC920B0D9F1C6E79F70864 /* Pods-Mesa Thinking-Mesa ThinkingUITests.debug.xcconfig */,
+				D77530E7A808A15C7825A1DC /* Pods-Mesa Thinking-Mesa ThinkingUITests.release.xcconfig */,
+				8C451B6A641F4496CDDE2B52 /* Pods-Mesa ThinkingTests.debug.xcconfig */,
+				CA96E3901AEC0FAE16529DB1 /* Pods-Mesa ThinkingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE19EF2F2597C381002AF8B6 = {
+			isa = PBXGroup;
+			children = (
+				DE19EF3A2597C381002AF8B6 /* Mesa Thinking */,
+				DE19EF512597C385002AF8B6 /* Mesa ThinkingTests */,
+				DE19EF5C2597C385002AF8B6 /* Mesa ThinkingUITests */,
+				DE19EF392597C381002AF8B6 /* Products */,
+				6FCE6AFF969016CFDE52261C /* Pods */,
+				19B13A6429AD03C490B2A4CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE19EF392597C381002AF8B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF382597C381002AF8B6 /* Mesa Thinking.app */,
+				DE19EF4E2597C385002AF8B6 /* Mesa ThinkingTests.xctest */,
+				DE19EF592597C385002AF8B6 /* Mesa ThinkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE19EF3A2597C381002AF8B6 /* Mesa Thinking */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF852597CC8C002AF8B6 /* projectFiles */,
+				DE7097BE2597D792003136B6 /* helper */,
+				DE7097982597D6AE003136B6 /* supportFiles */,
+				DE19EF842597CC78002AF8B6 /* storyboards */,
+				DE19EF762597CC02002AF8B6 /* view */,
+				DE19EF752597CBF2002AF8B6 /* viewModel */,
+				DE19EF742597CBED002AF8B6 /* model */,
+			);
+			path = "Mesa Thinking";
+			sourceTree = "<group>";
+		};
+		DE19EF512597C385002AF8B6 /* Mesa ThinkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF522597C385002AF8B6 /* Mesa_ThinkingTests.swift */,
+				DE19EF542597C385002AF8B6 /* Info.plist */,
+			);
+			path = "Mesa ThinkingTests";
+			sourceTree = "<group>";
+		};
+		DE19EF5C2597C385002AF8B6 /* Mesa ThinkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF5D2597C385002AF8B6 /* Mesa_ThinkingUITests.swift */,
+				DE19EF5F2597C385002AF8B6 /* Info.plist */,
+			);
+			path = "Mesa ThinkingUITests";
+			sourceTree = "<group>";
+		};
+		DE19EF742597CBED002AF8B6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DE7097B72597D758003136B6 /* News.swift */,
+				DED56D862599953300C5E9E3 /* NewsOptional.swift */,
+				DED56DA025999E0B00C5E9E3 /* Pagination.swift */,
+				DEC2A191259A7AD6006B86A5 /* Token.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DE19EF752597CBF2002AF8B6 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF822597CC60002AF8B6 /* home */,
+				DE19EF812597CC58002AF8B6 /* auth */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		DE19EF762597CC02002AF8B6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF802597CC43002AF8B6 /* home */,
+				DE19EF772597CC2B002AF8B6 /* auth */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DE19EF772597CC2B002AF8B6 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF3F2597C381002AF8B6 /* LoginVC.swift */,
+				DE19EF782597CC3E002AF8B6 /* SignUpVC.swift */,
+				DED56DAD259A321600C5E9E3 /* StartVC.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		DE19EF802597CC43002AF8B6 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DE70979C2597D6C9003136B6 /* NewsBasicTableViewCell */,
+				DE7097992597D6C9003136B6 /* NewsDestaquesCollectionViewCell */,
+				DE7097CB2597D85D003136B6 /* NewsDestaquesCollectionViewVC.swift */,
+				DE7097CC2597D85D003136B6 /* NewsBasicTableViewVC.swift */,
+				DE70978F2597D5CD003136B6 /* HomeVC.swift */,
+				DEB2AC58259BA56A00C68781 /* DetailNewsVC.swift */,
+				DE1376B6259BF2C700E5D503 /* FilterVC.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		DE19EF812597CC58002AF8B6 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				DED56DA52599B87900C5E9E3 /* AuthViewModel.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		DE19EF822597CC60002AF8B6 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DE7097D22597D886003136B6 /* HomeViewModel.swift */,
+				DEB2AD3F259BCA9600C68781 /* NewsViewModel.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		DE19EF842597CC78002AF8B6 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF462597C384002AF8B6 /* LaunchScreen.storyboard */,
+				DE19EF412597C381002AF8B6 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		DE19EF852597CC8C002AF8B6 /* projectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE19EF492597C384002AF8B6 /* Info.plist */,
+				DE19EF3D2597C381002AF8B6 /* SceneDelegate.swift */,
+				DE19EF442597C384002AF8B6 /* Assets.xcassets */,
+				DE19EF3B2597C381002AF8B6 /* AppDelegate.swift */,
+				DEB2AC76259BC0B400C68781 /* GoogleService-Info.plist */,
+			);
+			path = projectFiles;
+			sourceTree = "<group>";
+		};
+		DE7097982597D6AE003136B6 /* supportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE70979F2597D6C9003136B6 /* LoadingView */,
+				DE7097A42597D6C9003136B6 /* MessageView */,
+			);
+			path = supportFiles;
+			sourceTree = "<group>";
+		};
+		DE7097992597D6C9003136B6 /* NewsDestaquesCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE70979A2597D6C9003136B6 /* NewsDestaquesCollectionViewCell.xib */,
+				DE70979B2597D6C9003136B6 /* NewsDestaquesCollectionViewCell.swift */,
+			);
+			path = NewsDestaquesCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DE70979C2597D6C9003136B6 /* NewsBasicTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE70979D2597D6C9003136B6 /* NewsBasicTableViewCell.swift */,
+				DE70979E2597D6C9003136B6 /* NewsBasicTableViewCell.xib */,
+			);
+			path = NewsBasicTableViewCell;
+			sourceTree = "<group>";
+		};
+		DE70979F2597D6C9003136B6 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				DE7097A02597D6C9003136B6 /* AnimateloadingView.swift */,
+				DE7097A12597D6C9003136B6 /* LoadingView.xib */,
+				DE7097A22597D6C9003136B6 /* LoadingViewable.swift */,
+				DE7097A32597D6C9003136B6 /* loadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		DE7097A42597D6C9003136B6 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				DE7097A52597D6C9003136B6 /* MessageView.xib */,
+				DE7097A62597D6C9003136B6 /* MessageView.swift */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		DE7097BE2597D792003136B6 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				DE7097BF2597D792003136B6 /* Extensiones.swift */,
+				DE7097C02597D792003136B6 /* ReactiveExtensiones.swift */,
+				DE7097C12597D792003136B6 /* Network.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE19EF372597C381002AF8B6 /* Mesa Thinking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE19EF622597C385002AF8B6 /* Build configuration list for PBXNativeTarget "Mesa Thinking" */;
+			buildPhases = (
+				B89887153851FFF8A1392C14 /* [CP] Check Pods Manifest.lock */,
+				DE19EF342597C381002AF8B6 /* Sources */,
+				DE19EF352597C381002AF8B6 /* Frameworks */,
+				DE19EF362597C381002AF8B6 /* Resources */,
+				E2C716FC0F59EFC577932C86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mesa Thinking";
+			productName = "Mesa Thinking";
+			productReference = DE19EF382597C381002AF8B6 /* Mesa Thinking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE19EF4D2597C385002AF8B6 /* Mesa ThinkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE19EF652597C385002AF8B6 /* Build configuration list for PBXNativeTarget "Mesa ThinkingTests" */;
+			buildPhases = (
+				52B5360509530E072D658750 /* [CP] Check Pods Manifest.lock */,
+				DE19EF4A2597C385002AF8B6 /* Sources */,
+				DE19EF4B2597C385002AF8B6 /* Frameworks */,
+				DE19EF4C2597C385002AF8B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE19EF502597C385002AF8B6 /* PBXTargetDependency */,
+			);
+			name = "Mesa ThinkingTests";
+			productName = "Mesa ThinkingTests";
+			productReference = DE19EF4E2597C385002AF8B6 /* Mesa ThinkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE19EF582597C385002AF8B6 /* Mesa ThinkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE19EF682597C385002AF8B6 /* Build configuration list for PBXNativeTarget "Mesa ThinkingUITests" */;
+			buildPhases = (
+				9B8E6C7346CC7D4D5628A636 /* [CP] Check Pods Manifest.lock */,
+				DE19EF552597C385002AF8B6 /* Sources */,
+				DE19EF562597C385002AF8B6 /* Frameworks */,
+				DE19EF572597C385002AF8B6 /* Resources */,
+				3E570F719BB4F89840D58E06 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE19EF5B2597C385002AF8B6 /* PBXTargetDependency */,
+			);
+			name = "Mesa ThinkingUITests";
+			productName = "Mesa ThinkingUITests";
+			productReference = DE19EF592597C385002AF8B6 /* Mesa ThinkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE19EF302597C381002AF8B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DE19EF372597C381002AF8B6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DE19EF4D2597C385002AF8B6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DE19EF372597C381002AF8B6;
+					};
+					DE19EF582597C385002AF8B6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DE19EF372597C381002AF8B6;
+					};
+				};
+			};
+			buildConfigurationList = DE19EF332597C381002AF8B6 /* Build configuration list for PBXProject "Mesa Thinking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE19EF2F2597C381002AF8B6;
+			productRefGroup = DE19EF392597C381002AF8B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE19EF372597C381002AF8B6 /* Mesa Thinking */,
+				DE19EF4D2597C385002AF8B6 /* Mesa ThinkingTests */,
+				DE19EF582597C385002AF8B6 /* Mesa ThinkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE19EF362597C381002AF8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7097A72597D6C9003136B6 /* NewsDestaquesCollectionViewCell.xib in Resources */,
+				DE19EF482597C384002AF8B6 /* LaunchScreen.storyboard in Resources */,
+				DE19EF452597C384002AF8B6 /* Assets.xcassets in Resources */,
+				DE7097AC2597D6C9003136B6 /* LoadingView.xib in Resources */,
+				DEB2AC77259BC0B400C68781 /* GoogleService-Info.plist in Resources */,
+				DE7097AF2597D6C9003136B6 /* MessageView.xib in Resources */,
+				DE7097AA2597D6C9003136B6 /* NewsBasicTableViewCell.xib in Resources */,
+				DE19EF432597C381002AF8B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19EF4C2597C385002AF8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19EF572597C385002AF8B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E570F719BB4F89840D58E06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mesa Thinking-Mesa ThinkingUITests/Pods-Mesa Thinking-Mesa ThinkingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mesa Thinking-Mesa ThinkingUITests/Pods-Mesa Thinking-Mesa ThinkingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mesa Thinking-Mesa ThinkingUITests/Pods-Mesa Thinking-Mesa ThinkingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B5360509530E072D658750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mesa ThinkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8E6C7346CC7D4D5628A636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mesa Thinking-Mesa ThinkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89887153851FFF8A1392C14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mesa Thinking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2C716FC0F59EFC577932C86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mesa Thinking/Pods-Mesa Thinking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mesa Thinking/Pods-Mesa Thinking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mesa Thinking/Pods-Mesa Thinking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE19EF342597C381002AF8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7097D32597D887003136B6 /* HomeViewModel.swift in Sources */,
+				DE19EF792597CC3E002AF8B6 /* SignUpVC.swift in Sources */,
+				DE7097902597D5CD003136B6 /* HomeVC.swift in Sources */,
+				DE7097C42597D792003136B6 /* Network.swift in Sources */,
+				DE7097A82597D6C9003136B6 /* NewsDestaquesCollectionViewCell.swift in Sources */,
+				DED56DAE259A321600C5E9E3 /* StartVC.swift in Sources */,
+				DE1376B7259BF2C700E5D503 /* FilterVC.swift in Sources */,
+				DEB2AC59259BA56A00C68781 /* DetailNewsVC.swift in Sources */,
+				DE7097AE2597D6C9003136B6 /* loadingView.swift in Sources */,
+				DE7097AB2597D6C9003136B6 /* AnimateloadingView.swift in Sources */,
+				DE7097CE2597D85D003136B6 /* NewsBasicTableViewVC.swift in Sources */,
+				DE7097C22597D792003136B6 /* Extensiones.swift in Sources */,
+				DE7097AD2597D6C9003136B6 /* LoadingViewable.swift in Sources */,
+				DEB2AD40259BCA9600C68781 /* NewsViewModel.swift in Sources */,
+				DE7097B02597D6C9003136B6 /* MessageView.swift in Sources */,
+				DE7097C32597D792003136B6 /* ReactiveExtensiones.swift in Sources */,
+				DE7097CD2597D85D003136B6 /* NewsDestaquesCollectionViewVC.swift in Sources */,
+				DE19EF402597C381002AF8B6 /* LoginVC.swift in Sources */,
+				DE19EF3C2597C381002AF8B6 /* AppDelegate.swift in Sources */,
+				DE19EF3E2597C381002AF8B6 /* SceneDelegate.swift in Sources */,
+				DED56D872599953300C5E9E3 /* NewsOptional.swift in Sources */,
+				DED56DA62599B87900C5E9E3 /* AuthViewModel.swift in Sources */,
+				DEC2A192259A7AD6006B86A5 /* Token.swift in Sources */,
+				DED56DA125999E0B00C5E9E3 /* Pagination.swift in Sources */,
+				DE7097A92597D6C9003136B6 /* NewsBasicTableViewCell.swift in Sources */,
+				DE7097B92597D758003136B6 /* News.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19EF4A2597C385002AF8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE19EF532597C385002AF8B6 /* Mesa_ThinkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE19EF552597C385002AF8B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE19EF5E2597C385002AF8B6 /* Mesa_ThinkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE19EF502597C385002AF8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE19EF372597C381002AF8B6 /* Mesa Thinking */;
+			targetProxy = DE19EF4F2597C385002AF8B6 /* PBXContainerItemProxy */;
+		};
+		DE19EF5B2597C385002AF8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE19EF372597C381002AF8B6 /* Mesa Thinking */;
+			targetProxy = DE19EF5A2597C385002AF8B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE19EF412597C381002AF8B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE19EF422597C381002AF8B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE19EF462597C384002AF8B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE19EF472597C384002AF8B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE19EF602597C385002AF8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE19EF612597C385002AF8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE19EF632597C385002AF8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA2CDB5F43CF6CF5C0BD600 /* Pods-Mesa Thinking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S6WP3YNVV;
+				INFOPLIST_FILE = "$(SRCROOT)/Mesa Thinking/projectFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mesa.Mesa-Thinking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE19EF642597C385002AF8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C57498CB938B2D68E74EE85 /* Pods-Mesa Thinking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S6WP3YNVV;
+				INFOPLIST_FILE = "$(SRCROOT)/Mesa Thinking/projectFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mesa.Mesa-Thinking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE19EF662597C385002AF8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C451B6A641F4496CDDE2B52 /* Pods-Mesa ThinkingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S6WP3YNVV;
+				INFOPLIST_FILE = "Mesa ThinkingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mesa.Mesa-ThinkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesa Thinking.app/Mesa Thinking";
+			};
+			name = Debug;
+		};
+		DE19EF672597C385002AF8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA96E3901AEC0FAE16529DB1 /* Pods-Mesa ThinkingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S6WP3YNVV;
+				INFOPLIST_FILE = "Mesa ThinkingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mesa.Mesa-ThinkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesa Thinking.app/Mesa Thinking";
+			};
+			name = Release;
+		};
+		DE19EF692597C385002AF8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63DC920B0D9F1C6E79F70864 /* Pods-Mesa Thinking-Mesa ThinkingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S6WP3YNVV;
+				INFOPLIST_FILE = "Mesa ThinkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mesa.Mesa-ThinkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mesa Thinking";
+			};
+			name = Debug;
+		};
+		DE19EF6A2597C385002AF8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77530E7A808A15C7825A1DC /* Pods-Mesa Thinking-Mesa ThinkingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S6WP3YNVV;
+				INFOPLIST_FILE = "Mesa ThinkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mesa.Mesa-ThinkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mesa Thinking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE19EF332597C381002AF8B6 /* Build configuration list for PBXProject "Mesa Thinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE19EF602597C385002AF8B6 /* Debug */,
+				DE19EF612597C385002AF8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE19EF622597C385002AF8B6 /* Build configuration list for PBXNativeTarget "Mesa Thinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE19EF632597C385002AF8B6 /* Debug */,
+				DE19EF642597C385002AF8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE19EF652597C385002AF8B6 /* Build configuration list for PBXNativeTarget "Mesa ThinkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE19EF662597C385002AF8B6 /* Debug */,
+				DE19EF672597C385002AF8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE19EF682597C385002AF8B6 /* Build configuration list for PBXNativeTarget "Mesa ThinkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE19EF692597C385002AF8B6 /* Debug */,
+				DE19EF6A2597C385002AF8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE19EF302597C381002AF8B6 /* Project object */;
+}
